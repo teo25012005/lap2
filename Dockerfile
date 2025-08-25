@@ -1,4 +1,4 @@
-FROM tomcat:9.0-jdk24
+FROM tomcat:11.0.10-jdk24
 
 # Xoá ứng dụng mặc định của Tomcat (tuỳ chọn)
 RUN rm -rf /usr/local/tomcat/webapps/*
@@ -11,3 +11,4 @@ EXPOSE 8080
 
 # Chạy Tomcat
 CMD ["catalina.sh", "run"]
+
